@@ -1,0 +1,17 @@
+.novelDescription h2 {
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: var(--link-strong);
+}
+
+.description{
+    width: 100%;
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+}
+
+.description div {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin-top: 1rem;
+}

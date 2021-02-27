@@ -1,0 +1,26 @@
+.wrapperContainer {
+    font-family: sans-serif;
+    min-width: 100vw;
+    background-image: linear-gradient(to bottom right, rgba(255,255,255, .7), rgba(255,255,255,.3));
+}
+
+.container {
+    background-image: linear-gradient(to bottom right, rgba(255,255,255, .7), rgba(255,255,255,.3));
+    border-radius: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80vw;
+    height: 85vh;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.novelContent {
+    min-width: 50%;
+    min-height: 80%;
+    justify-content: flex-start;
+    flex: 4;
+}

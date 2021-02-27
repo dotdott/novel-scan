@@ -1,0 +1,32 @@
+.wrapperPoster h2 {
+    width: 80%;
+    color: var(--link-strong);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.wrapperPoster figure {
+    width: 300px;
+    height: 420px;
+    margin: 0 2rem 0 .9rem;
+    overflow: hidden;
+}
+
+.wrapperPoster img {
+    width: 300px;
+    height: 420px;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;  
+}
+
+.wrapperPoster img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.checkMore {
+    padding: 1.5rem;
+    width: 80%;
+}
