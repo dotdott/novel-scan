@@ -1,4 +1,4 @@
-import styles from '../styles/components/NovelsDetails.module.css';
+import styles from '../styles/pages/NovelsDetails.module.css';
 
 interface NovelsDetailsData {
     novelTitle: string;
@@ -10,6 +10,7 @@ interface NovelsDetailsData {
     authorNameENG: string;
     authorNameOriginal: string;
     novelType: string;
+    status: string;
 }
 
 export function NovelsDetails({
@@ -21,7 +22,8 @@ export function NovelsDetails({
     chapters,
     authorNameENG,
     authorNameOriginal,
-    novelType
+    novelType,
+    status
 }: NovelsDetailsData) {
     return(
         <div className={styles.novelInfo}>
@@ -35,6 +37,7 @@ export function NovelsDetails({
                 <p>{genres}</p>
 
                 <h3>Capitulos</h3>
+                <p><b>{status}</b></p>
                 <p>{chapters}</p>
                     
                 <h3>Autor</h3>

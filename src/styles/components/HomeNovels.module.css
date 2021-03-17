@@ -1,8 +1,12 @@
 .wrapperPoster h2 {
-    width: 80%;
     color: var(--link-strong);
+
     text-align: center;
+    letter-spacing: 1px;
     padding: 1.5rem;
+
+    font-weight: 600;
+    font-size: 1.3rem;
 }
 
 .wrapperPoster figure {
@@ -27,6 +31,103 @@
 }
 
 .checkMore {
+    text-align: center;
     padding: 1.5rem;
     width: 80%;
+}
+
+.checkMore a {
+    color: var(--white);
+    font-weight: 400;
+
+    border: 1px solid var(--black-strong);
+    padding: .5rem;
+    border-radius: 10px;
+    background: var(--black-light);
+    font-size: 100%;
+}
+
+.checkMore a:hover {
+    color: var(--link-hover);
+}
+
+.checkMore i {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1272px){
+    .wrapperPoster h2 {
+        margin: 0 auto;
+    }
+
+    .wrapperPoster figure,
+    .wrapperPoster img  {
+        width: 250px;
+        height: 300px;
+    }
+
+    .wrapperPoster a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .checkMore {
+        margin: 0 auto;
+    }
+    .checkMore p{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .wrapperPoster{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrapperPoster:last-child{
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .wrapperPoster figure {
+        width: inherit;
+        height: inherit;
+        margin: inherit;
+    }
+    
+    .wrapperPoster img {
+        width: 200px;
+        height: 300px;
+        margin: 0 15px 0 15px;
+    }    
+}
+
+@media screen and (max-width: 512px){
+    .wrapperPoster{
+        margin-bottom: 40px;
+    }
+    .wrapperPoster:last-child {
+        margin-top: 0;
+    }
+
+    .wrapperPoster h1{
+        font-size: 2rem;
+    }
+
+    .wrapperPoster h2{
+        font-size: 1.5rem;
+    }
+
+    .wrapperPoster img {
+        width: 200px;
+    }
+
+    .wrapperPoster {
+        justify-content: left;
+    }
 }

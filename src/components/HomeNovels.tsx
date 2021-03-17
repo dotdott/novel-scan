@@ -5,18 +5,22 @@ interface HomeNovelsData {
     novelName: string;
     novelTitle: string;
     imgTitle: string;
+    chapter: number;
+    imgHref: string;
 }
 
 export function HomeNovels({
     href, 
+    imgHref,
     novelName, 
     novelTitle, 
-    imgTitle
+    imgTitle,
+    chapter
     }: HomeNovelsData) {
     return (
         <div className={styles.wrapperPoster}>
-            <h2>{novelTitle}</h2>
-                <a href={href}>
+            <a href={imgHref}>
+                <h2>{novelTitle}</h2>
                     <figure>
                         <img src={novelName} alt={novelName} title={imgTitle}/>
                     </figure>
@@ -26,7 +30,7 @@ export function HomeNovels({
                 <p>
                     <i className="fas fa-arrow-right"></i>
                     <a href={href}>
-                        Cheque mais informações e os capítulos aqui
+                        Capítulo {chapter}
                     </a>
                 </p>
             </div>

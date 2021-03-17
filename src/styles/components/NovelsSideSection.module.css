@@ -1,18 +1,32 @@
 .otherNovels{
-    margin-left: 1rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 1rem;
     gap: 4rem;
     font-size: 2rem;
-    height: 50%;
+
+    height: auto;
 }
 
 .otherNovels a{
     color: var(--link-strong);
     letter-spacing: 1px;
+    font-weight: 600;
 }
 
 .otherNovels a:hover {
     color: var(--link-hover);
     font-size: 100%;
+}
+
+@media screen and (max-width: 800px){
+    .otherNovels {
+        margin: .8rem 0;
+        font-size: 1.5rem;
+        gap: 1rem;
+        text-align: center;
+    }
 }

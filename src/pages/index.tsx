@@ -5,27 +5,35 @@ export default function Home() {
   return (
     <>
     <Navbar />
-      <h1 className="home-title">Novels sendo traduzidas no momento</h1>
-    <div className="wrapper">
+    
+      <h1 className="home-title">Ultimos lançamentos</h1>
+
+    <div className="wrapperHome">
       <HomeNovels 
-        href= '/TNENovel'
-        novelName= 'extra-poster.jpg'
-        novelTitle= "The Novel's Extra"
-        imgTitle= "Ler The novel's extra em pt-br"
+        href= '/RTM/C1'
+        novelName= '8th.jpg'
+        novelTitle= "Return of The 8th Class Mage"
+        imgTitle= "Ler Return of The 8th Class Mage em pt-br"
+        chapter={2}
+        imgHref='./RTMNovel'
       />      
       
       <HomeNovels 
-        href= '#'
-        novelName= 'kingdom-poster.jpg'
-        novelTitle= "Kingdom's Bloodline"
-        imgTitle= "Ler the Kingdom's bloodline em pt-br"
+        href= '/KDG/C1'
+        novelName= 'kumo-desu-poster.jpeg'
+        novelTitle= "Kumo Desu ga, Nani ka?"
+        imgTitle= "Ler the Kumo Desu ga, Nani ka? em pt-br"
+        chapter={1}
+        imgHref='./KDGNovel'
       />  
 
       <HomeNovels 
-        href= '#'
-        novelName= 'deathmage-poster.jpg'
-        novelTitle= "The Death Mage"
-        imgTitle= "Ler The Death Mage em pt-br"
+        href= '/Monarch/C5'
+        novelName= 'Monarch.jpeg'
+        novelTitle= "I am the Monarch"
+        imgTitle= "Ler I am the Monarch em pt-br / ler Eu sou o Monarca"
+        chapter={5}
+        imgHref='./MonarchNovel'
       />
 
     </div>

@@ -1,0 +1,184 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+
+    background: #2e5b6d;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4rem;
+    padding-right: 6rem;
+    font-size: 2.5rem;
+}
+
+.navbar ul li {
+    width: 200px;
+    list-style: none;
+}
+
+.navbar a {
+    letter-spacing: 3px;
+    color:rgb(255, 233, 233) !important;
+}
+
+.navbar .logo {
+    width: 150px;
+    position: relative;
+    right: 150%;
+}
+
+.navbar a:hover {
+    color: var(--link-light) !important;
+}
+
+.novels {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 50px;
+}
+
+.novels:hover .hidden {
+    position: relative;
+    display: block;
+}
+
+.novels a:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.novels .hidden{
+    display: none;
+    position: relative;
+    
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    width: 480px;
+
+    color: var(--white) !important;
+    background: var(--black-light);
+}
+
+.novels .hidden:hover {
+    background: var(--link-light);
+    color: var(--white) !important;
+    
+    font-size: 1.5rem;
+}
+
+.novels .closeModal {
+    display: none;
+}
+
+.modal{
+    display: flex;
+    
+    justify-content: center;
+}
+
+.hamburger {
+    display: none;
+    width: 30px;
+}
+
+@media screen and (max-width: 1272px) {
+    .hamburger {
+        display: block;
+    }
+
+    .modal {
+        display: none;
+    }
+
+    .modalActive {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        z-index: 999;
+
+        width: 100%;
+        background: var(--black-light);
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modalActive .hidden {
+        display: block;
+    }
+
+    .modalActive .contact {
+        z-index: 9999;
+        position: relative;
+        top: 15%;
+    }
+
+    .novels .closeModal {
+        display: block;
+    }
+
+    .novels a:first-child {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 96vw;
+    }
+
+    .logo {
+        right: 0 !important;
+        left: 50px !important;
+    }
+    
+    .navbar {
+        display: flex;
+        width: 100vw;
+    }
+
+    .navbar ul {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        margin-left: 1rem;
+    }
+}   
+
+@media screen and (max-width: 800px) {
+    .logo {
+        left: 0 !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbar ul li{
+        display: flex;
+        width: 100%;        
+    }
+
+    .novels .hidden {
+        align-items: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .navbar .contact {
+        top: 24%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .logo {
+        left: -20px !important;
+    }
+
+    .navbar ul {
+        padding-right: 1rem;
+    }
+}

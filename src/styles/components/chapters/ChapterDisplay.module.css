@@ -1,0 +1,98 @@
+.chapterDisplay {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.chapterDisplay h2 {
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.chapterDisplay .dark {
+    color: #eee;
+}
+
+.chapterDisplay p {
+    word-wrap: break-all;
+}
+
+.chapterContent,
+.chapterContentDark {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 50vw;
+}
+
+.chapterContent pre { 
+    white-space: pre-wrap;
+
+    text-align: start;
+    font-family: sans-serif;
+    color: #000;
+    max-width: 50%;
+    height: 100%;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.05rem;
+    padding: 1rem;
+}
+
+.chapterContentDark pre {
+    white-space: pre-wrap;
+
+    text-align: start;
+    font-family: sans-serif;
+    color: #eee;
+    max-width: 50%;
+    height: 100%;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.05rem;
+    padding: 1rem;
+}
+
+
+.buttonClass {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.buttonClass a {
+    font-size: 1.6rem;
+    margin: 5px;
+
+    color: var(--link-strong);
+    cursor: pointer;
+}
+
+
+.buttonClass a:hover {
+    text-decoration: underline var(--link-strong) !important;
+    color: var(--white);
+    transition: ease .7s all;
+}
+
+.buttonClass a:active {
+    border: 2px solid #e61e25;
+    background-color: #fc4349;
+    transition: none;
+}
+
+@media screen and (max-width: 1200px){
+    .chapterContent,
+    .chapterContentDark {
+        min-width: 100vw;
+    }
+
+    .chapterContent pre,
+    .chapterContentDark pre {
+        max-width: 100%;
+    }
+}

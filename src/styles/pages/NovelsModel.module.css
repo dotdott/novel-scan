@@ -1,9 +1,3 @@
-.wrapperContainer {
-    font-family: sans-serif;
-    min-width: 100vw;
-    background-image: linear-gradient(to bottom right, rgba(255,255,255, .7), rgba(255,255,255,.3));
-}
-
 .container {
     background-image: linear-gradient(to bottom right, rgba(255,255,255, .7), rgba(255,255,255,.3));
     border-radius: 2rem;
@@ -13,14 +7,30 @@
     align-items: center;
 
     width: 80vw;
-    height: 85vh;
+    height: 88vh;
     margin: 0 auto;
     z-index: 2;
 }
 
 .novelContent {
     min-width: 50%;
-    min-height: 80%;
+    min-height: 88%;
     justify-content: flex-start;
     flex: 4;
+}
+
+@media screen and (max-width: 1272px){
+    .container {
+        width: 100vw;
+        height: 100%;
+    }
+    .novel-chapters.show-less {
+        grid-template-columns: repeat(4, 1fr);
+    }
+} 
+
+@media screen and (max-width: 800px){
+    .container {
+        display: block;
+    }
 }

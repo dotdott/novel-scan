@@ -1,10 +1,22 @@
 import styles from '../styles/components/NovelsSideSection.module.css';
 
-export function NovelsSideSection() {
+interface NovelsSideSectionData {
+    firstNovel: string;
+    firstNovelHREF: string;
+    secondNovel: string;
+    secondNovelHREF: string;
+}
+
+export function NovelsSideSection({
+    firstNovel, 
+    firstNovelHREF,
+    secondNovel,
+    secondNovelHREF
+    }: NovelsSideSectionData) {
     return (
         <div className={styles.otherNovels}>
-            <a href="/">Kingdom's Bloodline</a>
-            <a href="/">The Death Mage</a>
+            <a href={firstNovelHREF}>{firstNovel}</a>
+            <a href={secondNovelHREF}>{secondNovel}</a>
         </div>
     )
 }

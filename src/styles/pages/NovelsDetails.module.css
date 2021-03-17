@@ -1,0 +1,64 @@
+.novelInfo h3 {
+    letter-spacing: 1px;
+    color:  var(--link-strong);
+    font-weight: 500;
+}
+
+.novelInfo {
+    margin-left: 15px;
+    margin-right: 20px;
+    flex: 1;
+}
+
+.novelInfo h2 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.novelInfo img {
+    width: 300px;
+    margin-top: .5rem;
+}
+
+.novelInfo h3 {
+    line-height: 2rem;
+    margin-top: .5rem;
+}
+
+@media screen and (max-width: 800px){
+    .novelInfo {
+        display: flex;
+        border-bottom: 2px solid var(--link-light);
+        padding-bottom: 1rem;
+    }
+
+    .subInfo {
+        padding: 10px;
+        margin: 20px 0 0 20px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:512px) {
+    .novelInfo {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .novelInfo a {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subInfo {
+        margin: 0;
+    }
+}

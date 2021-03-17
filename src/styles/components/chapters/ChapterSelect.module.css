@@ -1,0 +1,40 @@
+.chapterSelect {
+    display: flex;
+    justify-content: center;
+
+    width: 50%;
+    margin: 1rem 0;
+    gap: 1rem;
+}
+
+.chapterSelect select {
+    padding: 3px;
+    width: 200px;
+    font-weight: 700;
+}
+
+.chapterSelect label {
+    margin: 0 10px 0 10px;
+    font-size: 1.3rem;
+}
+
+.dark {
+    color: #eee !important;
+    font-size: 4rem;
+}
+
+.readMode {
+    width: 65px !important;
+}
+
+@media screen and (max-width: 1200px) {
+    .chapterSelect {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .chapterSelect select {
+        width: auto;
+    }
+}

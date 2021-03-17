@@ -5,7 +5,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
     <Head>
-      <title>Novels</title>
+      <title>Simp Scan</title>
     </Head>
     
     <Component {...pageProps} />
