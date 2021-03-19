@@ -1,4 +1,4 @@
-import React, { createContext, ReactNode, SetStateAction, useState } from "react"
+import React, { createContext, ReactNode, useState } from "react";
 
 interface ChapterContextData {
     chapter: (route: string, chap: string | string[]) => void;

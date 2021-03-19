@@ -95,6 +95,7 @@ export default function ChapterSelect({
             <ChapterDisplay
                 tag={query.Chapters}
                 url={url}
+                totalChapters={totalChapters}
             />
     </div>
     )

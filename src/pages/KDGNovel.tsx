@@ -1,10 +1,11 @@
 import Head from "next/head";
+import CHAPTER from '../components/chapters/CHAPTER_DATA';
+
 import { Navbar } from "../components/navbar";
 import { NovelsChapters } from "../components/NovelsChapters";
 import { NovelsDescriptions } from "../components/NovelsDescription";
 import { NovelsDetails } from "../components/NovelsDetails";
 import { NovelsSideSection } from "../components/NovelsSideSection";
-
 
 import styles from '../styles/pages/NovelsModel.module.css'
 
@@ -36,7 +37,7 @@ export default function KDGNovel() {
                     imgTitle= "Capa Kumo Desu Ga, Nani Ka?"
                     genres= "Ação Aventura Comedia Drama Fantasia Mistério Ficção-Cientifica Seinen"
                     status = "Em andamento"
-                    chapters= "1/330"
+                    chapters= {CHAPTER().KDG_LAST + '/' + CHAPTER().KDG_TOTAL}
                     authorNameENG= "Baba Okina"
                     authorNameOriginal= "輝竜司"
                     novelType= "Japonesa"                    
@@ -48,7 +49,7 @@ export default function KDGNovel() {
                     />
 
                     <NovelsChapters 
-                        totalChapters= {2}
+                        totalChapters= {CHAPTER().KDG_LAST + 1}
                         href= "/KDG/C"
                     />
                 </div>

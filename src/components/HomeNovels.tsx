@@ -7,6 +7,7 @@ interface HomeNovelsData {
     imgTitle: string;
     chapter: number;
     imgHref: string;
+    release: string;
 }
 
 export function HomeNovels({
@@ -15,7 +16,8 @@ export function HomeNovels({
     novelName, 
     novelTitle, 
     imgTitle,
-    chapter
+    chapter,
+    release
     }: HomeNovelsData) {
     return (
         <div className={styles.wrapperPoster}>
@@ -32,6 +34,7 @@ export function HomeNovels({
                     <a href={href}>
                         Capítulo {chapter}
                     </a>
+                <small>{release}</small>
                 </p>
             </div>
         </div>

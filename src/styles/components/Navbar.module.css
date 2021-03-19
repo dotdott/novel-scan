@@ -115,8 +115,11 @@
 
     .modalActive .contact {
         z-index: 9999;
-        position: relative;
-        top: 15%;
+    }
+
+    .novels,
+    .contact {
+        height: auto;
     }
 
     .novels .closeModal {
@@ -153,6 +156,11 @@
     .logo {
         left: 0 !important;
     }
+
+    .navbar img {
+        position: relative;
+        left: 40px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -167,12 +175,6 @@
     }
 }
 
-@media screen and (max-width: 460px){
-    .navbar .contact {
-        top: 24%;
-    }
-}
-
 @media screen and (max-width: 350px) {
     .logo {
         left: -20px !important;
@@ -180,5 +182,10 @@
 
     .navbar ul {
         padding-right: 1rem;
+    }
+
+    .navbar img {
+        position: relative;
+        left: -4px;
     }
 }

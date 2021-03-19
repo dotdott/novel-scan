@@ -1,6 +1,9 @@
 import Head from 'next/head';
-import { useRouter } from 'next/router';
+import CHAPTER from '../../components/chapters/CHAPTER_DATA';
 import ChapterSelect from '../../components/chapters/ChapterSelect';
+
+import { useRouter } from 'next/router';
+
 import { Navbar } from '../../components/navbar';
 import { ChapterProvider } from '../../contexts/ChapterContext';
 import { DarkModeProvider } from '../../contexts/DarkModeContext';
@@ -24,7 +27,7 @@ export default function Chapters(){
                 <ChapterSelect 
                     title="I am the Monarch"
                     href="../MonarchNovel"
-                    totalChapters={5}
+                    totalChapters={CHAPTER().Monarch_LAST}
                     route={'/MONARCH-CHAPTERS/'}
                     url={'/Monarch/'}
                 />

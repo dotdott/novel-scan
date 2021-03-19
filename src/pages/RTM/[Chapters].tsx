@@ -1,9 +1,11 @@
 import Head from 'next/head'
-import { useRouter } from 'next/router'
-import { useContext } from 'react'
+import CHAPTER from '../../components/chapters/CHAPTER_DATA';
 import ChapterSelect from '../../components/chapters/ChapterSelect'
+
+import { useRouter } from 'next/router'
+
 import { Navbar } from '../../components/navbar'
-import { ChapterContext, ChapterProvider } from '../../contexts/ChapterContext'
+import { ChapterProvider } from '../../contexts/ChapterContext'
 import { DarkModeProvider } from '../../contexts/DarkModeContext'
 
 export default function Chapters(){
@@ -26,7 +28,7 @@ export default function Chapters(){
                 <ChapterSelect 
                     title="Return of The 8th Class Mage"
                     href="../RTMNovel"
-                    totalChapters={2}
+                    totalChapters={CHAPTER().RTM_LAST}
                     route={'/RTM-CHAPTERS/'}
                     url={'/RTM/'}
                 />

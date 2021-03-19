@@ -31,7 +31,10 @@
 }
 
 .checkMore {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.5rem;
     padding: 1.5rem;
     width: 80%;
 }
@@ -53,6 +56,10 @@
 
 .checkMore i {
     margin-right: 10px;
+}
+
+.checkMore small{  
+    margin-left: 1rem;
 }
 
 @media screen and (max-width: 1272px){
@@ -110,9 +117,13 @@
 @media screen and (max-width: 512px){
     .wrapperPoster{
         margin-bottom: 40px;
+        justify-content: left;
+
+        border-bottom: 2px solid var(--link-light);
     }
     .wrapperPoster:last-child {
         margin-top: 0;
+        border-bottom: none;
     }
 
     .wrapperPoster h1{
@@ -125,9 +136,5 @@
 
     .wrapperPoster img {
         width: 200px;
-    }
-
-    .wrapperPoster {
-        justify-content: left;
     }
 }

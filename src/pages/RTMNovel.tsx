@@ -1,14 +1,15 @@
 import Head from "next/head";
-import { useContext } from "react";
+import CHAPTER from '../components/chapters/CHAPTER_DATA';
+
 import { Navbar } from "../components/navbar";
 import { NovelsChapters } from "../components/NovelsChapters";
 import { NovelsDescriptions } from "../components/NovelsDescription";
 import { NovelsDetails } from "../components/NovelsDetails";
 import { NovelsSideSection } from "../components/NovelsSideSection";
-import { ChapterContext } from "../contexts/ChapterContext";
+
+import styles from '../styles/pages/NovelsModel.module.css';
 
 
-import styles from '../styles/pages/NovelsModel.module.css'
 
 export default function TNGNovel() {
     const value =   `<p>O primeiro Mago da 8° Classe da Humanidade</br>
@@ -39,7 +40,7 @@ export default function TNGNovel() {
                     imgTitle= "ler Return of The 8th Class Mage / ler O retorno do mago da 8° Classe."
                     genres= "Ação Fantasia Tragédias -O Retorno do mago da 8° Classe-"
                     status = "Em andamento"
-                    chapters= "2/186"
+                    chapters= {CHAPTER().RTM_LAST + '/' + CHAPTER().RTM_TOTAL}
                     authorNameENG= "Saseum"
                     authorNameOriginal= "류송"
                     novelType= "Coreana"
@@ -51,7 +52,7 @@ export default function TNGNovel() {
                     />
 
                     <NovelsChapters 
-                        totalChapters={3}
+                        totalChapters={CHAPTER().RTM_LAST + 1}
                         href={'/RTM/C'}
                     />
                 </div>

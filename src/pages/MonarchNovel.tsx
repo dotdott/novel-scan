@@ -1,9 +1,12 @@
 import Head from 'next/head'
+import CHAPTER from '../components/chapters/CHAPTER_DATA';
+
 import { Navbar } from '../components/navbar'
 import { NovelsChapters } from '../components/NovelsChapters'
 import { NovelsDescriptions } from '../components/NovelsDescription'
 import { NovelsDetails } from '../components/NovelsDetails'
 import { NovelsSideSection } from '../components/NovelsSideSection'
+
 import styles from '../styles/pages/NovelsModel.module.css'
 
 export default function TDMNovel() {
@@ -43,7 +46,7 @@ export default function TDMNovel() {
                     imgTitle= "ler I am the Monarch / ler Eu sou o monarca"
                     status = "Em andamento"
                     genres= "Ação Fantasia Artes-Marciais Seinen Eu-Sou-O-Monarca"
-                    chapters= "5/348"
+                    chapters= {CHAPTER().Monarch_LAST + '/' + CHAPTER().Monarch_TOTAL}
                     authorNameENG= "Cheol Jonggeum"
                     authorNameOriginal= "철종금"
                     novelType= "Coreana"                
@@ -56,7 +59,7 @@ export default function TDMNovel() {
                     />
 
                     <NovelsChapters 
-                        totalChapters= {6}
+                        totalChapters= {CHAPTER().Monarch_LAST + 1}
                         href= "/Monarch/C"
                     />
                 </div>

@@ -29,6 +29,11 @@
 
 @media screen and (max-width: 1200px) {
     .chapterSelect {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
         width: 100%;
     }
 }

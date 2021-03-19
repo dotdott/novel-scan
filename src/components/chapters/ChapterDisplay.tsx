@@ -2,9 +2,14 @@ import { useRouter } from 'next/router';
 import { useContext } from 'react';
 import { ChapterContext } from '../../contexts/ChapterContext';
 import { DarkModeContext } from '../../contexts/DarkModeContext';
+
 import styles from '../../styles/components/chapters/ChapterDisplay.module.css';
 
-export function ChapterDisplay({ tag, url }) {
+export function ChapterDisplay({ 
+        tag,
+        url,
+        totalChapters
+    }) {
     const { readMode } = useContext(DarkModeContext);
 
     const { chapterContent } = useContext(ChapterContext);
@@ -17,17 +22,21 @@ export function ChapterDisplay({ tag, url }) {
     function nextChapter(){
         const chapNumber = Number(query.Chapters.slice(1));
 
-        const chap = chapNumber + 1;
-
-        router.push(url + 'C' + chap);
+        if(chapNumber <= totalChapters){
+            const chap = chapNumber + 1;
+            
+            router.push(url + 'C' + chap);
+        } else return;
     }
 
     function previousChapter() {
         const chapNumber = Number(query.Chapters.slice(1));
-
-        const chap = chapNumber - 1;
         
-        router.push(url + 'C' + chap);
+        if(chapNumber > 0){
+            const chap = chapNumber - 1;
+            
+            router.push(url + 'C' + chap);
+        } else return;
     }
 
     return (
