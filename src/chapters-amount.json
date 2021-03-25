@@ -1,18 +1,18 @@
 { 
     "novels": {
         "KDG": {
-            "chapters": 3,
-            "release": "19/03/2021",
+            "chapters": 6,
+            "release": "23/03/2021",
             "total-chapters": 331
         },
         "RTM": {
-            "chapters": 2,
-            "release": "18/03/2021",
+            "chapters": 4,
+            "release": "24/03/2021",
             "total-chapters": 186
         },
         "Monarch": {
             "chapters": 6,
-            "release": "17/03/2021",
+            "release": "18/03/2021",
             "total-chapters": 348
         }
     }

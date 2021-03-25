@@ -23,7 +23,8 @@ export default function KDGNovel() {
     return (
       <>
         <Head>
-            <title>KDG Novel</title>
+            <title>Kumo Desu ga, Nani ka? Novel (pt-br)</title>
+            <meta name="Kumo Desu ga, Nani ka? (Idai que eu sou uma aranha?) Novel (pt-br)" content="Capítulos traduzidos em pt-BR da novel japonesa Kumo Desu ga, Nani ka? (Idai que eu sou uma aranha?)" />
         </Head>
 
         <Navbar />
@@ -50,16 +51,17 @@ export default function KDGNovel() {
 
                     <NovelsChapters 
                         totalChapters= {CHAPTER().KDG_LAST + 1}
-                        href= "/KDG/C"
+                        href= "/Kumo_Desu_ga_Nani_ka/C"
+                        novelName="Ler Kumo Desu ga, Nani ka? Capítulo "
                     />
                 </div>
 
 
                 <NovelsSideSection 
                     firstNovel= "Return of The 8th Class Mage"
-                    firstNovelHREF= '/RTMNovel'
+                    firstNovelHREF= '/Return_of_the_8th_Class_Mage'
                     secondNovel= "I am the Monarch"
-                    secondNovelHREF= './MonarchNovel'
+                    secondNovelHREF= '/I_am_the_Monarch'
                 />
 
             </div>

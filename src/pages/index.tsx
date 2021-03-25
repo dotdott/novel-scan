@@ -17,7 +17,7 @@ export default function Home() {
         novelTitle= "Return of The 8th Class Mage"
         imgTitle= "Ler Return of The 8th Class Mage em pt-br"
         chapter={CHAPTER().RTM_LAST}
-        imgHref='./RTMNovel'
+        imgHref='./Return_of_the_8th_Class_Mage'
         release={CHAPTER().RTM_RELEASE}
       />      
       
@@ -27,17 +27,17 @@ export default function Home() {
         novelTitle= "Kumo Desu ga, Nani ka?"
         imgTitle= "Ler the Kumo Desu ga, Nani ka? em pt-br"
         chapter={CHAPTER().KDG_LAST}
-        imgHref='./KDGNovel'
+        imgHref='./Kumo_Desu_ga_Nani_ka'
         release={CHAPTER().KDG_RELEASE}        
       />  
 
       <HomeNovels 
-        href= {'/Monarch/C' + CHAPTER().Monarch_LAST}
+        href= {'/I_am_the_Monarch/C' + CHAPTER().Monarch_LAST}
         novelName= 'Monarch.jpeg'
         novelTitle= "I am the Monarch"
         imgTitle= "Ler I am the Monarch em pt-br / ler Eu sou o Monarca"
         chapter={CHAPTER().Monarch_LAST}
-        imgHref='./MonarchNovel'
+        imgHref='./I_am_the_Monarch'
         release={CHAPTER().Monarch_RELEASE}
       />
 

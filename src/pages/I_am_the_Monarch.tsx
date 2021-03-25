@@ -32,7 +32,8 @@ export default function TDMNovel() {
     return(
     <>
         <Head>
-            <title>Monarch Novel</title>
+        <title>I am the Monarch Novel (pt-br)</title>
+            <meta name="I am the Monarch (Eu sou o Monarca) Novel (pt-br)" content="Capítulos traduzidos em pt-BR da novel coreana I am the Monarch (Eu sou o Monarca)" />
         </Head>
 
         <Navbar />
@@ -60,15 +61,16 @@ export default function TDMNovel() {
 
                     <NovelsChapters 
                         totalChapters= {CHAPTER().Monarch_LAST + 1}
-                        href= "/Monarch/C"
+                        href= "/I_am_the_Monarch/C"
+                        novelName="Ler I am the Monarch Capítulo "
                     />
                 </div>
 
                 <NovelsSideSection
                     firstNovel= "Kumo Desu ga, Nani ka?"
-                    firstNovelHREF= '/KDGNovel'
+                    firstNovelHREF= '/Kumo_Desu_ga_Nani_ka'
                     secondNovel= "Return of The 8th Class Mage"
-                    secondNovelHREF= '/RTMNovel'
+                    secondNovelHREF= '/Return_of_the_8th_Class_Mage'
                 />
 
             </div>

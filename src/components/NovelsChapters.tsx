@@ -4,11 +4,13 @@ import styles from '../styles/components/NovelsChapters.module.css';
 interface NovelsChaptersData {
     totalChapters: number;
     href: string;
+    novelName: string;
 }
 
 export function NovelsChapters({
         totalChapters,
-        href
+        href,
+        novelName
     }: NovelsChaptersData) {
     const [count, setCount] = useState(1);
     const [chapters, setChapters] = useState([0]) 
@@ -21,7 +23,7 @@ export function NovelsChapters({
                     setChapters([...chapters, count])
                 }
                 return(
-                    <a href={href + chapter} key={chapter}>
+                    <a href={href + chapter} key={chapter} title={novelName + chapter}>
                         Capítulo {chapter}
                     </a>
                     )

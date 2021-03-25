@@ -26,7 +26,8 @@ export default function TNGNovel() {
     return (
         <>
         <Head>
-            <title>RTM Novel</title>
+        <title>Return of The 8th Class Mage Novel (pt-br)</title>
+            <meta name="Return of The 8th Class Mage (Retorno do Mago da 8° Classe) Novel (pt-br)" content="Capítulos traduzidos em pt-BR da novel coreana Return of The 8th Class Mage (Retorno do Mago da 8° Classe)" />
         </Head>
 
         <Navbar />
@@ -53,15 +54,16 @@ export default function TNGNovel() {
 
                     <NovelsChapters 
                         totalChapters={CHAPTER().RTM_LAST + 1}
-                        href={'/RTM/C'}
+                        href={'/Return_of_the_8th_Class_Mage/C'}
+                        novelName="Ler Return of the 8th Class Mage Capítulo "
                     />
                 </div>
 
                 <NovelsSideSection 
                     firstNovel= "Kumo Desu ga, Nani ka?"
-                    firstNovelHREF= './KDGNovel'
+                    firstNovelHREF= '/Kumo_Desu_ga_Nani_ka'
                     secondNovel= "I am the Monarch"
-                    secondNovelHREF= './MonarchNovel'
+                    secondNovelHREF= '/I_am_the_Monarch'
                 />
             </div>
         </div>
