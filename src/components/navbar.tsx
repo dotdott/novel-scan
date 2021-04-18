@@ -30,13 +30,13 @@ export function Navbar() {
                         X
                     </span>
                 </a>
-                    <a href="/RTMNovel" className={styles.hidden}>
+                    <a href="/Return_of_the_8th_Class_Mage" className={styles.hidden}>
                         Return of the 8th Class Mage
                     </a>      
-                    <a href="/MonarchNovel" className={styles.hidden}>
+                    <a href="/I_am_the_Monarch" className={styles.hidden}>
                         I am the Monarch
                     </a> 
-                    <a href="/KDGNovel" className={styles.hidden}>
+                    <a href="/Kumo_Desu_ga_Nani_ka" className={styles.hidden}>
                         Kumu Desu Ga, Nani ka?
                     </a>
          

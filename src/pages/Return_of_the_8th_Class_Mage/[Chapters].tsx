@@ -27,10 +27,10 @@ export default function Chapters(){
 
                 <ChapterSelect 
                     title="Return of The 8th Class Mage"
-                    href="../RTMNovel"
+                    href="../Return_of_the_8th_Class_Mage"
                     totalChapters={CHAPTER().RTM_LAST}
                     route={'/RTM-CHAPTERS/'}
-                    url={'/RTM/'}
+                    url={'/Return_of_the_8th_Class_Mage/'}
                 />
 
             </ChapterProvider>

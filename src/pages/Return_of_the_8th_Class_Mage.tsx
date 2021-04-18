@@ -53,15 +53,15 @@ export default function TNGNovel() {
 
                     <NovelsChapters 
                         totalChapters={CHAPTER().RTM_LAST + 1}
-                        href={'/RTM/C'}
+                        href={'/Return_of_the_8th_Class_Mage/C'}
                     />
                 </div>
 
                 <NovelsSideSection 
                     firstNovel= "Kumo Desu ga, Nani ka?"
-                    firstNovelHREF= './KDGNovel'
+                    firstNovelHREF= './Kumo_Desu_ga_Nani_ka'
                     secondNovel= "I am the Monarch"
-                    secondNovelHREF= './MonarchNovel'
+                    secondNovelHREF= './I_am_the_Monarch'
                 />
             </div>
         </div>

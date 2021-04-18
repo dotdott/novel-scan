@@ -50,16 +50,16 @@ export default function KDGNovel() {
 
                     <NovelsChapters 
                         totalChapters= {CHAPTER().KDG_LAST + 1}
-                        href= "/KDG/C"
+                        href= "/Kumo_Desu_ga_Nani_ka/C"
                     />
                 </div>
 
 
                 <NovelsSideSection 
                     firstNovel= "Return of The 8th Class Mage"
-                    firstNovelHREF= '/RTMNovel'
+                    firstNovelHREF= '/Return_of_the_8th_Class_Mage'
                     secondNovel= "I am the Monarch"
-                    secondNovelHREF= './MonarchNovel'
+                    secondNovelHREF= './I_am_the_Monarch'
                 />
 
             </div>

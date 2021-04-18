@@ -11,6 +11,7 @@ export default class myDocument extends Document {
                     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,200;1,600;1,700&display=swap" rel="stylesheet" />
                     <link rel="preconnect" href="https://fonts.gstatic.com" />
                     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+                    <meta name="Simp Scan Novels" content="Ler Novels e webnovels japoneses, coreanas e chinesas traduzidas em portugues Brasil PT-BR com novos capítulos praticamente todos os dias." />
                 </Head>
 
                 <body>

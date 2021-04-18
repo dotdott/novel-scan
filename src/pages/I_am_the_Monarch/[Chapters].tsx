@@ -25,11 +25,11 @@ export default function Chapters(){
             <ChapterProvider>
 
                 <ChapterSelect 
-                    title="Kumo Desu ga, Nani ka?"
-                    href="../KDGNovel"
-                    totalChapters={CHAPTER().KDG_LAST}
-                    route={'/KDG-CHAPTERS/'}
-                    url={'/KDG/'}
+                    title="I am the Monarch"
+                    href="../I_am_the_Monarch"
+                    totalChapters={CHAPTER().Monarch_LAST}
+                    route={'/MONARCH-CHAPTERS/'}
+                    url={'/I_am_the_Monarch/'}
                 />
 
             </ChapterProvider>

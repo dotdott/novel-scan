@@ -60,15 +60,15 @@ export default function TDMNovel() {
 
                     <NovelsChapters 
                         totalChapters= {CHAPTER().Monarch_LAST + 1}
-                        href= "/Monarch/C"
+                        href='/I_am_the_Monarch/C'
                     />
                 </div>
 
                 <NovelsSideSection
                     firstNovel= "Kumo Desu ga, Nani ka?"
-                    firstNovelHREF= '/KDGNovel'
+                    firstNovelHREF= '/Kumo_Desu_ga_Nani_ka'
                     secondNovel= "Return of The 8th Class Mage"
-                    secondNovelHREF= '/RTMNovel'
+                    secondNovelHREF= '/Return_of_the_8th_Class_Mage'
                 />
 
             </div>
